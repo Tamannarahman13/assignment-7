@@ -11,7 +11,18 @@
 
 <body class="blog">
     <h2>Local Storage vs session storage</h2>
+    <p>The main difference between localStorage and sessionStorage is that sessionStorage is unique per tab. If you
+        close the tab the sessionStorage gets deleted, localStorage does not. Also you cannot communicate between tabs
+        Another subtle difference is that for example on Safari (8.0.3) localStorage has a limit of 2551 k characters
+        but sessionStorage has unlimited storage</p>
+    <p>Since local storage is persistent, it's your best bet to retain data across user visits. If you want to store
+        site preferences or cache long-term data, local storage is appropriate. You may not want to store more sensitive
+        data using local storage, since it is permanent.
 
+        As local and session storage are front-end methods, you may want to avoid using them for server-based functions
+        like user login. You could consider cookies as an alternative in these cases.</p>
+
+    <h2>Global Scope vs Block Scope</h2>
 </body>
 
 </html>
