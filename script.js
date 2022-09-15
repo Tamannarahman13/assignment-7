@@ -77,7 +77,7 @@ const gameOver = () => {
   // clear user text
   display.innerHTML = "";
   // make it inactive
-  display.classList.add("inactive");
+  display.classList.remove("inactive");
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
