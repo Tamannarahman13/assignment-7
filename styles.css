@@ -148,7 +148,9 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -183,6 +185,20 @@ button {
   top: 0;
 }
 
+#blog {
+  margin-left: 100px;
+  color: azure;
+  text-decoration: none;
+  border: 1px solid wheat;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 20px;
+}
+
+.blog {
+  color: white;
+}
+
 @media only screen and (max-width: 576px) {
   .box-container {
     padding: 0 20px;
@@ -190,6 +206,6 @@ button {
   }
 
   .card {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
